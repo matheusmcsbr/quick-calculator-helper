@@ -1,0 +1,21 @@
+
+{
+  "manifest_version": 3,
+  "name": "Elegant Calculator",
+  "description": "A beautiful, minimal calculator with clipboard functionality",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "calculator-16.png",
+      "48": "calculator-48.png",
+      "128": "calculator-128.png"
+    }
+  },
+  "icons": {
+    "16": "calculator-16.png",
+    "48": "calculator-48.png",
+    "128": "calculator-128.png"
+  },
+  "permissions": ["clipboardWrite"]
+}

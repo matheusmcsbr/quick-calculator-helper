@@ -1,69 +1,66 @@
-# Welcome to your Lovable project
 
-## Project info
+# Elegant Calculator Chrome Extension
 
-**URL**: https://lovable.dev/projects/87f6d87a-86ce-4a56-b5b5-cb1613419c69
+A beautifully designed calculator Chrome extension that combines minimalist aesthetics with essential functionality. Built with attention to detail and performance, this calculator provides a seamless experience with a copy-to-clipboard feature.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- Clean, minimal design inspired by modern design principles
+- Basic arithmetic operations: addition, subtraction, multiplication, division
+- Percentage and sign toggle functionality
+- Copy results to clipboard with one click
+- Smooth animations and transitions
+- Optimized for fast loading and performance
 
-**Use Lovable**
+## Development Setup
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/87f6d87a-86ce-4a56-b5b5-cb1613419c69) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
+This project is built with:
 
 - Vite
 - TypeScript
 - React
-- shadcn-ui
 - Tailwind CSS
+- shadcn-ui
 
-## How can I deploy this project?
+### Local Development
 
-Simply open [Lovable](https://lovable.dev/projects/87f6d87a-86ce-4a56-b5b5-cb1613419c69) and click on Share -> Publish.
+```bash
+# Install dependencies
+npm i
 
-## I want to use a custom domain - is that possible?
+# Start the development server
+npm run dev
+```
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+### Building the Chrome Extension
+
+To build the extension for Chrome:
+
+```bash
+# Build the project
+npm run build
+
+# The extension will be in the dist folder
+```
+
+## Loading the Extension in Chrome
+
+1. Open Chrome and navigate to `chrome://extensions/`
+2. Enable "Developer mode" using the toggle in the top right corner
+3. Click "Load unpacked" and select the `dist` directory from your project
+4. The extension should now appear in your extensions list and in the toolbar
+
+## Publishing to the Chrome Web Store
+
+To publish to the Chrome Web Store:
+
+1. Create a developer account at the [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole/)
+2. Zip the contents of the `dist` directory
+3. Create a new item in the developer dashboard
+4. Fill out required information and upload the zip file
+5. Submit for review
+
+## License
+
+MIT
+
