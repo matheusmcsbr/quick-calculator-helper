@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { Copy, Check } from 'lucide-react';
 import { toast } from 'sonner';
@@ -12,7 +11,6 @@ const Calculator = () => {
   const displayRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Scroll to the end of the display when content changes
     if (displayRef.current) {
       displayRef.current.scrollLeft = displayRef.current.scrollWidth;
     }
@@ -83,7 +81,6 @@ const Calculator = () => {
           newValue = inputValue;
       }
 
-      // Format the result to avoid long floating point issues
       const formattedValue = parseFloat(newValue.toFixed(10)).toString();
       setDisplay(formattedValue);
       setPrevValue(newValue);
@@ -112,7 +109,7 @@ const Calculator = () => {
   return (
     <div className="calculator-container w-80 p-0 select-none">
       <div className="relative">
-        <div ref={displayRef} className="calculator-display text-4xl">
+        <div ref={displayRef} className="calculator-display text-4xl pr-12 py-6">
           {display}
         </div>
         <button 
@@ -125,7 +122,6 @@ const Calculator = () => {
       </div>
       
       <div className="grid grid-cols-4 gap-3 p-4">
-        {/* Row 1 */}
         <button onClick={clearAll} className="function-button">
           AC
         </button>
@@ -139,7 +135,6 @@ const Calculator = () => {
           ÷
         </button>
         
-        {/* Row 2 */}
         <button onClick={() => inputDigit('7')} className="number-button">
           7
         </button>
@@ -153,7 +148,6 @@ const Calculator = () => {
           ×
         </button>
 
-        {/* Row 3 */}
         <button onClick={() => inputDigit('4')} className="number-button">
           4
         </button>
@@ -167,7 +161,6 @@ const Calculator = () => {
           -
         </button>
 
-        {/* Row 4 */}
         <button onClick={() => inputDigit('1')} className="number-button">
           1
         </button>
@@ -181,7 +174,6 @@ const Calculator = () => {
           +
         </button>
 
-        {/* Row 5 */}
         <button onClick={() => inputDigit('0')} className="number-button col-span-2">
           0
         </button>

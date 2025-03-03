@@ -88,7 +88,7 @@
 }
 
 .calculator-display {
-  @apply font-light tracking-tighter text-right pr-6 py-6 overflow-x-auto overflow-y-hidden whitespace-nowrap bg-calculator-display rounded-t-3xl;
+  @apply font-light tracking-tighter text-right overflow-x-auto overflow-y-hidden whitespace-nowrap bg-calculator-display rounded-t-3xl;
   scrollbar-width: none;
 }
 
@@ -113,5 +113,5 @@
 }
 
 .copy-button {
-  @apply absolute top-5 right-5 text-gray-400 hover:text-gray-600 transition-colors duration-150 p-2 rounded-full hover:bg-gray-100/50 animate-slide-up;
+  @apply absolute top-1/2 right-3 -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors duration-150 p-2 rounded-full hover:bg-gray-100/50 animate-slide-up;
 }
